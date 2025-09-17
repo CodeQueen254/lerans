@@ -1,0 +1,340 @@
+
+:root{
+--main:#000000;
+--sec:#5682B1;
+--tet:#FFE8DB;
+}
+body{
+    background-color: var(--tet);
+    color:var(--main);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    box-sizing: border-box;
+}
+
+section > p{
+    font-size: 2.5em;
+    text-align:center;
+    padding-block-start:3em;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section > .container > h1{
+    font-size:1.2em;
+    font-family:poppins, sans-serif;
+    text-align: center;
+}
+section > .container > #tick > .time{
+       font-family:poppins, sans-serif;
+       font-size:2em;
+       text-align: center;
+        border:6px solid var(--main);
+        border-radius:50px;
+        width:15em;
+        height:2em;
+        padding-block-start: 1.3em;
+        color: var(--main);
+}
+section > .container > #tick{
+    align-items: center;
+    padding-inline:26em;
+    padding-block-start:1.2em;
+}
+
+section >.tap >  button{
+    font-size:1.2em;
+    padding-block:0.7em;
+    padding-inline:2em;
+    background-color: var(--main);
+    color:var(--tet);
+    border-radius:30px;
+    border-style: none;
+    box-shadow: 3px 2px 3px black;
+    cursor:pointer;
+}
+section >.tap >  button:hover{
+/* transform: scale(1,1); */
+background-color: var(--sec); /* Change to your secondary color */
+  color: var(--main);           /* Change text color on hover */
+  transform: scale(1.05);       /* Slightly enlarge the button */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Add a subtle shadow */
+  transition: all 0.2s ease;
+}
+section >.tap{
+    padding-inline: 36em;
+    padding-block:2em;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    section{
+        padding-inline: 10vw;
+        padding-block: 5em;
+    }
+    section > p{
+        font-size:2em;
+        text-align:center;
+        padding-block-start:1em;
+    }
+    section > .container > h1{
+        font-size:1.5em;
+        padding-block-start:0.5em;
+    }
+    section > .tap{
+        padding-inline: 20vw;
+        align-items:center;
+    }
+    section > .container > #tick{
+        padding-block-start: 3em;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    body {
+        display: flex;
+    }
+    section {
+        padding-block-start: 2em;
+        padding-inline: 2vw;
+    }
+    section > p {
+        font-size: 1.1em;
+        text-align: center;
+        padding-block-start: 2em;
+    }
+    section > .container > h1 {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    section > .container > #tick {
+        padding-inline-start: 2vw;
+    }
+    section > .container > #tick > .time {
+        font-size: 1em;
+        border-radius: 35px;
+        text-align: center;
+        border-radius: 50px;
+        width: 90vw;
+        height: 2em;
+        padding-block: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+    section > .tap > button {
+        font-size: 0.8em;
+        padding-block: 0.5em;
+        padding-inline: 1.2em;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Mid-size devices (large phones, phablets, small tablets) */
+@media screen and (min-width:481px) and (max-width:767px) {
+    section {
+        padding-inline: 5vw;
+        padding-block: 3em;
+    }
+    section > p {
+        font-size: 1.3em;
+        padding-block-start: 2em;
+    }
+    section > .container > h1 {
+        font-size: 1.1em;
+    }
+    section > .tap {
+        padding-inline: 10vw;
+    }
+    section > .container > #tick {
+        padding-inline-start: 5vw;
+    }
+}
+
+/* Desktop screens */
+@media screen and (min-width:1025px) {
+    section {
+        padding-inline: 15vw;
+        padding-block: 7em;
+    }
+    section > p {
+        font-size: 2.2em;
+    }
+    section > .container > h1 {
+        font-size: 1.7em;
+    }
+    section > .tap {
+        padding-inline: 25vw;
+    }
+    section > .container > #tick {
+        padding-inline-start: 10vw;
+    }
+}
+
+/* Removed overly specific device queries for 540-541px and 414-415px for broader responsiveness */
+
+
+
+/* :root{
+--main:#000000;
+--sec:#5682B1;
+--tet:#FFE8DB;
+}
+body{
+    background-color: var(--tet);
+    color:var(--main);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+section > p{
+    font-size: 2.5em;
+    text-align:center;
+    padding-block-start:3em;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section > .container > h1{
+    font-size:1.2em;
+    font-family:poppins, sans-serif;
+    text-align: center;
+}
+section > .container > #tick > .time{
+       font-family:poppins, sans-serif;
+       font-size:2em;
+       text-align: center;
+        border:6px solid var(--main);
+        border-radius:50px;
+        width:15em;
+        height:2em;
+        padding-block-start: 1.3em;
+        color: var(--main);
+}
+section > .container > #tick{
+    align-items: center;
+    padding-inline:26em;
+    padding-block-start:1.2em;
+}
+
+section >.tap >  button{
+    font-size:1.2em;
+    padding-block:0.7em;
+    padding-inline:2em;
+    background-color: var(--main);
+    color:var(--tet);
+    border-radius:30px;
+    border-style: none;
+    box-shadow: 3px 2px 3px black;
+    cursor:pointer;
+}
+
+section >.tap{
+    padding-inline: 36em;
+    padding-block:2em;
+}
+@media screen and (min-width:768px) and (max-width:1024px)
+ {
+  
+    section{
+        padding-inline-end: 0em;
+        padding-block:7em;
+    }
+    section > p{
+        font-size:2em;
+        text-align:center;
+        /* padding-inline-end: 5.5em; */
+        padding-block-start
+
+  
+    /* section > .container > h1{
+        font-size:1.5em;
+        padding-block-start:0.5em;
+    }
+    section > .tap{
+   padding-inline:35.5em;
+   align-items:center
+    }
+    section > .container > #tick{
+        padding-block-start: 5em;
+    } */
+    
+
+/* 
+
+@media screen and (min-width:320px ) and (max-width:480px){
+   
+     body{
+box-sizing:none;
+display:flex;
+     }
+     section{
+        padding-block-start: 5em;
+     }
+    
+section > p{
+    font-size:1.2em;
+    text-align:center;
+    padding-block-start:4em;
+}
+section > .container > h1{
+    font-size: 0.8em;
+    text-align:center;
+}
+    section > .container > #tick{
+        
+       padding-inline-start: 31em;
+    }
+section > .container > #tick > .time{
+    font-size:1.2em;
+    border-radius:35px;
+       text-align: center;
+        border-radius:50px;
+        width:12em;
+        height:1.5em;
+        padding-block: 1.3em;
+        align-items: center;
+        justify-content:center;
+}
+section >.tap >  button{
+    font-size:0.8em;
+    padding-block:0.5em;
+    padding-inline:1.2em;
+    display: flex;
+    flex-direction:row;
+}
+   
+}
+
+@media screen and (min-width:540px) and (max-width:541px){
+ section > .tap{
+    padding-inline:38.7em;
+ }
+  section > .container > #tick{
+    padding-inline:30em;
+    padding-block-start:4em;
+
+    
+  }
+}
+
+@media screen and (min-width:414px) and (max-width:415px){
+    section > .container  #tick{
+        padding-inline-start:26em;
+    }
+    section >.tap > button{
+        padding-inline:1.8em;
+    }
+     section >.tap{
+        padding-inline:29.3em
+     }
+    section > .container > h1{
+        padding-inline-end: 2em;
+    }
+    section > p{
+        padding-inline-end:1.6em;
+    }
+}  */
+
+
+
